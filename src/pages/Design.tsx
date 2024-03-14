@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { VStack, HStack, Spacer, Center, Box } from '@chakra-ui/layout'
 import SideBar from '../components/SideBar'
-// import BackButton from '../components/BackButton'
-// import LogOutButton from '../components/LogOutButton'
+import BackButton from '../components/BackButton'
+import LogOutButton from '../components/LogOutButton'
 import RoomForm from '../components/RoomForm'
-// import IconButton from '../components/IconButton'
+import IconButton from '../components/IconButton'
 import ShowGuide from '../components/ShowGuide'
 import DraggableImg from '../components/DraggableImg'
 import type { interiorType } from '../type/InteriorType'
@@ -54,11 +54,11 @@ function Design (): JSX.Element {
       <SideBar userName='ユーザー' userIcon='https://4.bp.blogspot.com/-9zrw_gaiVPc/WvQG9mq4oFI/AAAAAAABL3M/0Bl3RvIk2hsJkuUXp6m4IZJBq8ysDqwhwCLcBGAs/s800/bg_moon_getsumen_earth.jpg' addInteriors={addInteriors}/>
       <VStack marginLeft='15%' marginTop='20px' width='85%' height='100%'>
         <HStack width='97%' height='50px'>
-          {/* <BackButton/> */}
+          <BackButton/>
           <Spacer/>
-          {/* <IconButton type='save' event={ () => { console.log(name) } }/> */}
+          <IconButton type='save' event={ () => { console.log(name) } }/>
           <Box width='20px'/>
-          {/* <LogOutButton/> */}
+          <LogOutButton/>
         </HStack>
         <HStack width='97%' marginTop='20px'>
           <Spacer/>
