@@ -67,7 +67,7 @@ function Design (): JSX.Element {
           </VStack>
           <Spacer/>
           <VStack>
-            <HStack width='700px' height='50px'/>
+            {/* <HStack width='700px' height='50px'/> */}
             <Viewport3D interiorsInfo={interiorsInfo}/>
           </VStack>
           <Spacer/>
