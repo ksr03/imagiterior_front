@@ -63,6 +63,18 @@ export function useInteractJS (position: Partial<typeof initPosition> = initPosi
         const temp = width
         width = height
         height = temp
+        if (x < -(350 - width / 2)) {
+          x = -(350 - width / 2)
+        }
+        if (x > 350 - width / 2) {
+          x = 350 - width / 2
+        }
+        if (y < -(350 - height / 2)) {
+          y = -(350 - height / 2)
+        }
+        if (y > 350 - height / 2) {
+          y = 350 - height / 2
+        }
         setPosition({
           width,
           height,
