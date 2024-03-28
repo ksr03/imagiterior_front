@@ -2,6 +2,7 @@ import React from 'react'
 import { VStack, Text, Box } from '@chakra-ui/layout'
 import Logo from '../components/Logo'
 import LoginButton from '../components/LoginButton'
+import AuthComponent from '../components/AuthComponent'
 
 function Login (): JSX.Element {
   return (
@@ -9,6 +10,7 @@ function Login (): JSX.Element {
       <VStack spacing='10px' marginY={20}>
         <Text fontSize='40px' fontWeight='bold'>Imagiterior</Text>
         <Logo size={200}/>
+        <AuthComponent/>
         <Box height='20px'/>
         <LoginButton message='Googleアカウントでログイン '/>
       </VStack>
