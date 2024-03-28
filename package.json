@@ -19,6 +19,7 @@
     "@types/three": "^0.162.0",
     "axios": "^1.6.7",
     "chakra-ui": "^0.3.9",
+    "firebase": "^10.9.0",
     "framer-motion": "10",
     "interactjs": "^1.10.26",
     "react": "^18.2.0",
