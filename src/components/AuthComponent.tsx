@@ -51,6 +51,8 @@ const AuthComponent: any = () => {
       {user !== null ? (
         <div>
           <p>ログインユーザー: {user.displayName}</p>
+          <p>mail: {user.email}</p>
+          <p>photo: {user.photoURL}</p>
           <button onClick={handleSignOut}>ログアウト</button>
         </div>
       ) : (
